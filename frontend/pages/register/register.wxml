@@ -1,0 +1,16 @@
+<!--pages/register/register.wxml-->
+<view class="maincontainer">
+
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+  <image class="avatar" src="{{avatarUrl}}"></image>
+  </button> 
+
+<view class="name">
+<text>昵称</text>
+  <input type="nickname" bindinput="getUserName" class="weui-input" placeholder="请输入昵称"/>
+
+</view>
+
+<button class="register" bind:tap="register" > 注册</button>
+
+</view>

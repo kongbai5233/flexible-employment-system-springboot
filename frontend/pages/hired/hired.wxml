@@ -1,0 +1,69 @@
+<!--pages/hired/hired.wxml-->
+<view class="mainContainer">
+<view class="navHead">
+<image class="headimg" src="../images/hired/background.png" mode=""/>
+<image class="return" bind:tap="returnback" src="../images/hired/return.png" mode=""/>
+
+<view class="townList">
+<view class="town" wx:for="{{town}}" bind:tap="changeTown" data-index="{{index}}">
+<image src="{{selectTown==index?item.selectImg:item.unselectImg}}" mode=""/>
+<view style="font-weight: {{selectTown==index?'900':'400'}};">{{item.townName}}</view>
+</view>
+</view>
+
+</view>
+
+<view class="contextBox">
+<view class="leftContext" >
+<view class="area" wx:for="{{area}}"  bind:tap="changeVillage" style="background-color: {{index==selectVillage? '#FFFFFF':''}}"  data-index="{{index}}">
+{{item}}
+</view>
+
+</view>
+
+<view class="rightContext">
+<view class="shaixuan">
+<div class="xuanage">
+<text>年龄</text>
+<image src="../images/hired/shangxia.png" mode=""/>
+</div>
+<div class="xuan">
+  <text>筛选</text>
+<image src="../images/hired/shuaixuan.png" mode=""/>
+</div>
+<view class="ssline"><image src="../images/hired/line.png" mode=""/></view>
+</view>
+<view class="hiddenBox" wx:if="{{Merchant.length !== 0}}">
+
+<view class="listContext" wx:for="{{Merchant}}" wx:key="index" data-item="{{item}}" bind:tap="toHired">
+<view class="leftList">
+<image src="{{item.head}}" mode=""/></view>
+<view class="rightList">
+<view class="nameDiv">
+<text class="name">{{item.name}}</text>
+<image class="sex" src="{{item.sexImg}}" mode=""/>
+<text class="age">{{item.age}}</text>
+</view>
+<view class="inform">
+<text>{{item.manager}}</text>
+<text>{{item.money}}</text>
+</view>
+<view class="assess">
+<image src="{{item.asessImg}}" mode=""/>
+<text>{{item.asess}}</text>
+</view>
+<view class="line"><image src="../images/hired/line.png" mode=""/></view>
+<view class="zuo"><image src="../images/hired/zuo.png" mode=""/></view>
+</view>
+</view>
+
+</view>
+
+<view wx:else="" class="noMerchant">
+  <image src="../images/hired/noPeople.png" mode=""/>
+</view>
+
+</view>
+</view>
+
+</view>

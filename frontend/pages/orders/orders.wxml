@@ -1,0 +1,51 @@
+<!--pages/orders/orders.wxml-->
+<view class="containerContext">
+<view class="state">
+<view>待接单
+<image src="../images/orders/Line 7.png" mode=""/>
+</view>
+<view>进行中</view>
+<view>已结束</view>
+
+
+</view>
+
+
+<view class="orders">
+
+<view class="order" wx:for="{{orders}}" bind:tap="check" data-orderId="{{item.orderId}}" data-staffID="{{item.staffID}}" >
+<view class="textcontent">
+<view class="timeInfo">
+<text>{{item.manager}}</text>
+<text>下单时间：{{item.ordertime}}</text>
+</view>
+<view class="starTime">
+<image src="../images/orders/Ellipse 13.png" mode=""/>
+开始时间：{{item.starttime}}
+</view>
+
+<view class="workAdress">
+  <image src="../images/orders/Ellipse 14.png" mode=""/>
+  工作地址：{{item.location}}
+</view>
+<image src="../images/orders/Line 23.png" mode=""/>
+</view>
+
+<view class="function">
+<view>平台派单</view>
+<button class="alert" bind:tap="alertOrder" data-orderId="{{item.orderId}}" data-staffID="{{item.staffID}}">修改订单</button>
+
+<view class="delete" catchtap="deleteOrder" data-orderId="{{item.orderId}}">删除发布</view>
+</view>
+
+</view>
+
+
+<view class="noLogin" wx:if="{{isLogin==0}}">
+    <image src="../images/my/user_login.png" />
+     <text>登录后精彩更多</text>
+</view>
+
+</view>
+
+</view>

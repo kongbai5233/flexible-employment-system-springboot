@@ -1,0 +1,31 @@
+<!--pages/my/my.wxml-->
+<!-- 区域1：登录面板 -->
+<view class="containerContext">
+  <view id="myLogin" style="background-color: {{userImg ? 'none' : '#328eeb'}};">
+    <!-- 用户头像和姓名 -->
+    <image class="bgimg" wx:if="{{userImg}}" src="../images/my/bg.jpg" mode=""/>
+    <block class="bg" wx:if="{{userImg}}">
+      <image id="myIcon" src="{{userImg}}"></image>
+      <text id="myName">{{username}}</text>
+    </block>
+    <!-- 未登录时显示的按钮 -->
+    <button wx:else bind:tap="wxLogin">未登录，点此登录</button>
+  </view>
+
+<block wx:if="{{userImg}}">
+  <view class="content">
+  <!-- <image  src="../images/my/bg.jpg" mode=""/> -->
+    <view class="content_list" wx:for="{{list}}" mark:now="{{index}}" wx:key="{{index}}" bind:tap="getfunction">
+      <image src="{{item.src}}" />
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="noLogin">
+    <image src="../images/my/user_login.png" />
+     <text>登录后精彩更多</text>
+  </view>
+</block>
+
+</view>

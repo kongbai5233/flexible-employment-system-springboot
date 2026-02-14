@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/deliver/deliver",
+    "pages/my/my",
+    "pages/applyJob/applyJob",
+    "pages/spaces/spaces",
+    "pages/hired/hired",
+    "pages/hiring/hiring",
+    "pages/orders/orders",
+    "pages/register/register",
+    "pages/alerthiring/alerthiring",
+    "pages/detail/detail"
+    
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "1小时灵活就业",
+    "navigationBarBackgroundColor": "#FF8126"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/pages/images/icon/Shouye.png",
+        "selectedIconPath": "/pages/images/icon/ShouyeUse.png"
+      },
+      {
+        "pagePath": "pages/spaces/spaces",
+        "text": "空间",
+        "iconPath": "/pages/images/icon/Shangjia.png",
+        "selectedIconPath": "/pages/images/icon/ShangjiaUse.png"
+      },
+      {
+        "pagePath": "pages/deliver/deliver",
+        "iconPath": "/pages/images/icon/fabu.png",
+        "text": "发布",
+        "selectedIconPath": "/pages/images/icon/fabu.png"
+      },
+      {
+        "pagePath": "pages/orders/orders",
+        "text": "订单",
+        "iconPath": "/pages/images/icon/Yingping.png",
+        "selectedIconPath": "/pages/images/icon/YingpingUse.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/pages/images/icon/my.png",
+        "selectedIconPath": "/pages/images/icon/myUse.png"
+      }
+    ]
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

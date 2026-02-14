@@ -1,0 +1,145 @@
+.navContainer{
+  width: 375px;
+  height: 175px;
+  margin: 0;
+  background: linear-gradient(180.81deg, #FF8126 0.7%, rgba(255, 129, 38, 0.81) 43.88%, rgba(255, 129, 38, 0) 95.38%);
+  padding: 16px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+.groupContent{
+  width: 343px;
+  height: 156px;
+  margin: auto;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 47.92%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 12px;
+}
+.group{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.choseBox{
+  font-size: 12px;
+  width: 58px;
+  height: 58px;
+  text-align: center;
+  line-height: 12px;
+}
+swiper{
+width: 100%;
+height: 100%;
+}
+
+swiper-item{
+width: 100%;
+height: 100%;
+}
+.choseBox image{
+width: 42px;
+height: 42px;
+}
+
+.navImage{
+  width: 343px;
+  height: 156px;
+  margin: auto;
+  margin-top: 16px;
+  position: relative;
+}
+.textGo{
+  width: 77px;
+  height: 16px;
+  position: absolute;
+  right: 29px;
+  bottom: 16px;
+  font-size: 16px;
+  color: #336662;
+}
+.textGo image{
+  margin-left: 8px;
+  width: 5px;
+  height: 10px;
+}
+.navImage>image{
+  width: 100%;
+  height: 100%;
+}
+
+.function{
+  width: 375px;
+  height: 305px;
+  margin: auto;
+}
+.function .topNav{
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  width: 375px;
+  height: 48px;
+  position:relative;
+}
+.topNav > image{
+  width: 24px;
+  height: 4px;
+  position:absolute;
+  top:43px;
+  left: 50px;
+}
+.tipNav{
+  width: 375px;
+  height: 24px;
+  margin: auto;
+  text-align: center;
+  color:#FF8126;
+  font-size: 12px;
+}
+.bottomNav{
+  width: 375px;
+  height: 255px;
+  padding-top: 16px;
+  box-sizing: border-box;
+}
+.bottomNav .ezheng{
+  width: 375px;
+  height: 70px;
+ display: flex;
+}
+
+.ezheng .eLeft{
+  width: 70px;
+  height: 70px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.eLeft>image{
+  width: 70px;
+  height: 70px;
+}
+.ezheng .eRight{
+  width: 273px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.eRight .title{
+  font-size: 18px;
+}
+
+.eRight .evaluate{
+  margin-top: 10px;
+  display: flex;
+  align-items:center;
+  font-weight: 14px;
+  color: #FF8126;
+}
+.evaluate>image{
+  width: 70px;
+  height: 14px;
+  margin-right: 5px;
+}

@@ -1,0 +1,161 @@
+/* pages/orders/orders.wxss */
+.containerContext{
+  background-color: #F9F9F9;
+}
+/* 状态栏 */
+.state{
+  width: 375px;
+  height: 50px;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  
+}
+.state > view:first-child{
+  color: #FF8126;
+  margin-left: 16px;
+  position: relative;
+}
+.state > view:nth-child(2){
+  margin: 0 32px;
+}
+.state > view >image{
+  width: 32px;
+  height: 2px;
+  position:absolute;
+  bottom: -8px;
+  left: 8px;
+}
+
+/* 订单区 */
+.orders{
+  width: 375px;
+  height: 580px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.orders .order{
+  height: 190px;
+  width: 343px;
+  background-color: white;
+  box-sizing: border-box;
+  padding-top: 18px;
+  border-radius: 12px;
+}
+
+.order .textcontent{
+  height: 116px;
+  width: 343px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.textcontent>image{
+ width: 303px;
+ height: 2px;
+ position:absolute;   
+ bottom: 0;
+ left: 16px;
+}
+
+.timeInfo > text{
+  font-size: 14px;
+  color: #828282;
+}
+.timeInfo > text:first-child{
+  font-size: 18px;
+  font-weight: 600;
+  color: #121B36;
+  padding-left: 16px;
+  padding-right: 43px;
+}
+
+.starTime{
+font-size: 14px;
+font-weight: 400;
+color: #121B36;
+display: flex;
+align-items: center;
+margin-top: 18px;
+}
+.starTime>image{
+  width: 4px;
+  height: 4px;
+  margin-left: 16px;
+  margin-right: 5px;
+}
+.workAdress{
+  font-size: 14px;
+  font-weight: 400;
+  color: #121B36;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  }
+  .workAdress>image{
+    width: 4px;
+    height: 4px;
+    margin-left: 16px;
+    margin-right: 5px;
+  }
+
+.function{
+  width: 343px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+}
+.function>view{
+  margin-left: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #828282;
+}
+
+.function .alert{
+  width: 108px;
+  height: 26px;
+  background-color: #FF8126;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 10px;
+  margin: 0 22px;
+}
+
+.function .delete{
+  text-align: center;
+  width: 80px;
+  height: 26px;
+  color: #FF8126;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 400;
+  border: #FF8126 1px solid;
+  border-radius: 6px;
+  line-height: 26px;
+}
+
+.noLogin{
+  width: 375px;
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+align-items: center;
+font-size: 40rpx;
+font-weight: bolder;
+color: blue;
+}
+.noLogin image{
+  width: 100%;
+  height: 500rpx;
+  margin-bottom: 50rpx;
+
+}

@@ -1,0 +1,209 @@
+/* pages/hired/hired.wxss */
+.mainContainer{
+  background-color: #F9F9F9;
+}
+.navHead{
+  width: 375px;
+  height: 180px;
+  position: relative;
+}
+.navHead .headimg{
+  width: 100%;
+  height: 100%;
+}
+
+.navHead .townList{
+  width: 375px;
+  height: 66px;
+  /* background-color: red; */
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  /* background-color: red; */
+}
+
+.townList .town{
+  width: 88px;
+  height: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.town > image{
+margin-bottom: 4px;
+width: 32px;
+height: 32px;
+}
+
+.return{
+  width: 12px;
+  height: 24px;
+  position:absolute;
+  top: 50px;
+  left: 16px;
+}
+.contextBox{
+  width: 100%;
+  display: flex;
+}
+.contextBox .leftContext{
+  width: 88px;
+  height:630px;
+  background-color: #F9F9F9;
+}
+.area{
+  width: 88px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  font-size: 14px;
+  color: #828282;
+}
+
+.rightContext{
+  width: 287px;
+  height: 560px;
+  background-color: #FFFFFF;
+
+}
+.hiddenBox{
+  height: 550px;
+  overflow-y: auto;
+}
+
+.listContext{
+  height: 69px;
+  width: 287px;
+  display: flex;
+  padding-top: 8px;
+  box-sizing: border-box;
+
+}
+
+
+.noMerchant {
+  width: 265.36px;
+  height: 217px;
+  margin-top: 20px;
+  margin-left: 21px;
+}
+.noMerchant > image{
+  width: 100%;
+  height: 100%;
+}
+
+.leftList{
+width: 84px;
+height: 52px;
+}
+.leftList > image{
+  width: 52px;
+  height: 52px;
+  margin: 0 16px 9px 16px;
+}
+
+.rightList{
+  width: 203px;
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.rightList .sex{
+width: 14px;
+height: 14px;
+margin-right: 8px;
+}
+.rightList .name{
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 8px;
+}
+
+.rightList .age{
+color:#828282;
+}
+.inform{
+  margin-top: 2px;
+  font-size: 12px;
+  color: #828282;
+}
+.inform > text{
+  margin-right: 16px;
+}
+.assess{
+  margin-top: 2px;
+  height: 14px;
+  font-size: 14px;
+  color: #828282;
+  display: flex;
+  align-items:center;
+}
+.assess> image{
+  width: 70px;
+  height: 14px;
+  margin-right: 4px;
+}
+.line{
+width: 255px;
+height: 1px;
+position:absolute;
+bottom: 3px;
+left: -70px;
+}
+.line image{
+  width: 255px;
+  height: 1px;
+}
+.zuo{
+  width: 10px;
+  height: 10px;
+  position:absolute;
+  top: 15px;
+  right: 16px;
+
+}
+.zuo image{
+  width: 10px;
+  height: 10px;
+}
+
+.shaixuan{
+width: 287px;
+height: 47px;
+display: flex;
+justify-content:space-between;
+align-items: center;
+position: relative;
+}
+.xuanage{
+  margin-left: 16px;
+}
+.xuanage>image{
+  width: 5px;
+  height: 10px;
+  margin-left: 4px;
+}
+.xuan{
+  margin-right: 16px;
+}
+.xuan>image{
+  width: 10px;
+  height: 10px;
+  margin-left: 4px;
+}
+.ssline{
+  width: 255px;
+  height: 1px;
+  position:absolute;
+  left: 15px;
+  bottom: 20px;
+  }
+  .ssline image{
+    width: 255px;
+    height: 1px;
+  }

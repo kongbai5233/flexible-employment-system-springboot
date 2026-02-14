@@ -1,0 +1,100 @@
+<!--pages/hiring/hiring.wxml-->
+<view class="maincontainer">
+
+ <view class="photo" wx:if="{{alert==1}}">
+<view class="innerphoto">
+<view class="post" bind:tap="upphoto" wx:if="{{imgArry.length==0}}">
+<image src="../images/hiring/photo.png" mode=""/>
+<text>添加照片</text>
+</view>
+<view class="havephoto" wx:else="" >
+<view class="thephoto" wx:for="{{imgArry}}">
+  <image  src="{{item}}" mode=""/>
+  <image  src="../images/hiring/delete.png" bind:tap="deletePhoto" data-index="{{index}}" mode=""/>
+  </view>
+</view>
+</view>
+</view>
+<view class="photo" wx:else="" >
+<view class="innerphoto" >
+<view class="post"  wx:if="{{imgArry.length==0}}">
+<image src="../images/alerthiring/暂无图片.png" mode=""/>
+<text>暂无图片</text>
+</view>
+<view class="havephoto" wx:else="" >
+<view class="thephoto" wx:for="{{imgArry}}">
+  <image  src="{{item}}" mode=""/>
+  </view>
+</view>
+</view>
+</view>
+
+
+
+
+
+<view class="giveType">
+
+<view class="serveType">
+<view class="fuwutype">服务类型</view>
+
+<view class="xinxi">
+<view>{{Merchant.manager}}</view>
+<view>市场指导价: {{Merchant.money}}</view>
+</view>
+
+</view>
+
+<view class="serveaddress">
+<view>联系地址</view>
+<view bind:tap="{{alert==1?'choseAddress':''}}">{{location}}</view>
+</view>
+
+<view class="serveTime">
+<view>工作开始时间</view>
+<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" 
+ value="{{multiIndex}}" range="{{multiArray}}">
+  <view class="chosetime" >{{starttime}}</view>
+</picker>
+<!-- <view>请选择starttime</view> -->
+</view>
+
+</view>
+
+
+<view class="needDetail">
+<view>详情描述</view>
+<view>
+<textarea bindinput="getDemand" value="{{demand}}"  placeholder="请填写您的需求描述（选填10-2000字以内）"/>
+</view>
+</view>
+
+<view class="listContext">
+<view class="leftList">
+<image src="{{Merchant.head}}" mode=""/></view>
+<view class="rightList">
+<view class="nameDiv">
+<text class="name">{{Merchant.name}}</text>
+<image class="sex" src="{{Merchant.sexImg}}" mode=""/>
+<text class="age">{{Merchant.age}}</text>
+</view>
+<view class="inform">
+<text>{{Merchant.manager}}</text>
+<text>{{Merchant.money}}</text>
+</view>
+<view class="assess">
+<image src="{{Merchant.asessImg}}" mode=""/>
+<text>{{Merchant.asess}}</text>
+</view>
+</view>
+</view>
+
+<view class="agree" wx:if="{{alert==1}}">
+<image src="../images/hiring/agree.png" mode=""/>
+我已阅读并同意<text>《服务协议和免责申明》</text>
+</view>
+
+<view class="btn" wx:if="{{alert==1}}">
+<button bind:tap="zhaopin">修改订单</button>
+</view>
+</view>

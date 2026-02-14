@@ -1,0 +1,51 @@
+<!--pages/index/index.wxml-->
+<view class="navContainer" >
+
+<swiper  class="groupContent"	indicator-dots="true" indicator-color="#E0E0E0" 
+indicator-active-color="#FF9E57"
+
+>
+<swiper-item class="group" wx:for="{{ppage1}}" wx:key="*this" wx:for-item="wai">
+<view class="choseBox" wx:for="{{wai}}" wx:key="*this">
+<image src="{{item.src}}" mode=""/>
+<view>{{item.title}}</view>
+</view>
+</swiper-item>
+</swiper>
+</view>
+
+<view class="navImage" bind:tap="goHired">
+<image src="../images/index/666.png" mode=""/>
+
+<view class="textGo">
+<text>人员直聘</text>
+<image src="../images/index/zuo.png" mode=""/>
+</view>
+</view>
+
+<view class="function">
+  <view class="topNav">
+  <view style="font-size: 16px; font-weight: 600;">保洁</view>
+  <view>搬家</view>
+  <view>管道疏通</view>
+  <view>电工</view>
+  <image src="../images/index/line.png" mode=""/>
+  </view>
+  <view class="tipNav">
+    市场指导价：50元/小时</view>
+  <view class="bottomNav">
+  <view class="ezheng">
+  <view class="eLeft">
+  <image src="../images/index/ezheng.png" mode=""/>
+  </view>
+  <view class="eRight">
+  <text class="title">e家政·私人定制全职管家</text>
+  <view class="evaluate">
+  <image src="../images/index/xing.png" mode=""/>
+  <text>4.5</text>
+  </view>
+  
+  </view>
+  </view>
+  </view>
+</view>

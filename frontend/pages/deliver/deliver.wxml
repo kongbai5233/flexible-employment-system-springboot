@@ -1,0 +1,5 @@
+<!--pages/deliver/deliver.wxml-->
+<view class="containerContent">
+<image src="../images/努力开发中.png" mode=""/>
+
+</view>
